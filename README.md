@@ -1,3 +1,23 @@
+- [中文文本分类模型集锦](#中文文本分类模型集锦)
+  - [数据说明](#数据说明)
+  - [实验结果:](#实验结果)
+  - [模型说明](#模型说明)
+    - [1. FastText](#1-fasttext)
+      - [安装](#安装)
+      - [训练](#训练)
+    - [2. NEZHA](#2-nezha)
+      - [配置](#配置)
+    - [3. Roberta](#3-roberta)
+      - [配置](#配置-1)
+      - [训练](#训练-1)
+    - [4. MengZi](#4-mengzi)
+      - [配置](#配置-2)
+      - [训练](#训练-2)
+    - [5. TextRCNN](#5-textrcnn)
+      - [配置](#配置-3)
+      - [训练](#训练-3)
+  
+ 
 # 中文文本分类模型集锦
 ## 数据说明
 数据来源: https://github.com/CLUEbenchmark/CLUE
@@ -77,3 +97,16 @@ CUDA_VISIBLE_DEVICES=0 python run_cls_iflytek.py   # 直接做了验证
 tnew数据集  
 CUDA_VISIBLE_DEVICES=0 python run_cls_tnews.py   # 直接做了验证
 
+
+### 5. TextRCNN
+#### 配置
+词向量下载: https://github.com/Embedding/Chinese-Word-Vectors
+#### 训练
+iflytek数据集
+1. python build_vocab_iflytek.py   # 构建词表和加载词向量
+2. CUDA_VISIBLE_DEVICES=0 python run_train_iflytek.py    # 训练+验证
+
+tnew数据集
+1. python build_vocab_tnews.py   # 构建词表和加载词向量
+2. CUDA_VISIBLE_DEVICES=0 python run_train_tnews.py   # 训练+验证
+ 
