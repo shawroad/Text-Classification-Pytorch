@@ -16,10 +16,11 @@
 | 模型 | iflytek(各类应用主题数据 长文本) Accuracy | tnews(今日头条新闻数据集 短文本) Accuracy | Avg |
 | :-: | :-: | :-: | :-: | 
 | FastText | 53.09 | 51.03 | 52.06 | 
-| Roberta-base | 60.75 | 57.27 | 59.01 | 
-| NEZHA-base | **?** | **58.23** | **?** | 
 | MengZi-base | 60.44 | 57.40  | 58.92 | 
-| Roberta_MultiDrop| 60.71 | 57.46 | 59.1 |
+| Roberta-base | 60.75 | 57.27 | 59.01 | 
+| Roberta+MultiDrop| 60.71 | 57.46 | 59.10 |
+| Roberta+RDrop| **60.94** | **58.17** | **59.55** |
+| Roberta+HighWay| * | * | * |
 
 ## 模型说明
 
