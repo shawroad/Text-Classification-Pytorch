@@ -1,14 +1,23 @@
-目录
 - [中文文本分类模型集锦](#中文文本分类模型集锦)
   - [数据说明](#数据说明)
-  - [实验结果](#实验结果)
+  - [实验结果:](#实验结果)
   - [模型说明](#模型说明)
-    - [1. FastText模型的使用](#1-fasttext模型的使用)
-    - [2. NEZHA模型的使用](#2-nezha模型的使用)
-    - [3. Roberta模型的使用](#3-roberta模型的使用)
-    - [4. MengZi模型的使用](#4-mengzi模型的使用)
-    - [5. TextRCNN模型的使用](#5-textrcnn模型的使用)
-
+    - [1. FastText](#1-fasttext)
+      - [安装](#安装)
+      - [训练](#训练)
+    - [2. NEZHA](#2-nezha)
+      - [配置](#配置)
+    - [3. Roberta](#3-roberta)
+      - [配置](#配置-1)
+      - [训练](#训练-1)
+    - [4. MengZi](#4-mengzi)
+      - [配置](#配置-2)
+      - [训练](#训练-2)
+    - [5. TextRCNN](#5-textrcnn)
+      - [配置](#配置-3)
+      - [训练](#训练-3)
+  
+ 
 # 中文文本分类模型集锦
 ## 数据说明
 数据来源: https://github.com/CLUEbenchmark/CLUE
@@ -23,20 +32,22 @@
 该数据集共有1.7万多条关于app应用描述的长文本标注数据，包含和日常生活相关的各类应用主题，共119个类别："打车":0,"地图导航":1,"免费WIFI":2,"租车":3,….,"女性":115,"经营":116,"收款":117,"其他":118(分别用0-118表示)。  
 数据量：训练集(12,133)，验证集(2,599)，测试集(2,600)
 
-## 实验结果
+## 实验结果: 
 | 模型 | iflytek(各类应用主题数据 长文本) Accuracy | tnews(今日头条新闻数据集 短文本) Accuracy | Avg |
 | :-: | :-: | :-: | :-: | 
 | FastText | 53.09 | 51.03 | 52.06 | 
+| TextCNN | 55.86 | 53.82 | 54.84 |
+| DPCNN | 49.55 | 51.89 | 50.72 |
 | TextRCNN| 52.25 | 51.82 | 52.03 |
 | MengZi-base | 60.44 | 57.40  | 58.92 | 
 | Roberta-base | 60.75 | 57.27 | 59.01 | 
-| Roberta+MultiDrop| 60.71 | 57.46 | 59.10 |
+| Roberta+MultiDrop| 60.71 | 57.94 | 59.32 |
 | Roberta+RDrop| **60.94** | **58.17** | **59.55** |
-| Roberta+HighWay| * | * | * |
+| Roberta+HighWay| 58.09 | 57.54 | 57.81 |
 
 ## 模型说明
 
-### 1. FastText模型的使用
+### 1. FastText
 ####  安装
 pip install fasttext==0.9.2 -i https://pypi.douban.com/simple/
 
@@ -53,14 +64,14 @@ tnews数据集
 3. 推理评测: python inference.py 
 
 
-### 2. NEZHA模型的使用
+### 2. NEZHA
 #### 配置
 
 transformers==4.11.3  
 tokenizers==0.10.1  
 预训练模型下载地址: https://github.com/lonePatient/NeZha_Chinese_PyTorch
 
-### 3. Roberta模型的使用
+### 3. Roberta
 #### 配置
 
 transformers==4.11.3  
@@ -74,7 +85,7 @@ CUDA_VISIBLE_DEVICES=0 python run_cls_iflytek.py   # 直接做了验证
 tnews数据集  
 CUDA_VISIBLE_DEVICES=0 python run_cls_tnews.py   # 直接做了验证
 
-### 4. MengZi模型的使用
+### 4. MengZi
 #### 配置
 
 transformers==4.11.3  
@@ -89,7 +100,7 @@ tnew数据集
 CUDA_VISIBLE_DEVICES=0 python run_cls_tnews.py   # 直接做了验证
 
 
-### 5. TextRCNN模型的使用
+### 5. TextRCNN
 #### 配置
 词向量下载: https://github.com/Embedding/Chinese-Word-Vectors
 #### 训练
