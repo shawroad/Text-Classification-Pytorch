@@ -16,7 +16,12 @@
     - [5. TextRCNN](#5-textrcnn)
       - [配置](#配置-3)
       - [训练](#训练-3)
-  
+    - [6. Wobert](#6-wobert)
+      - [配置](#配置-4)
+      - [训练](#训练-4)
+    - [7. Roformer](#7-roformer)
+      - [配置](#配置-5)
+      - [训练](#训练-5)
  
 # 中文文本分类模型集锦
 ## 数据说明
@@ -46,6 +51,7 @@
 | Roberta+RDrop| **60.94** | 58.17 | 59.55 |
 | Roberta+HighWay| 58.09 | 57.54 | 57.81 |
 | Wobert | 60.86 | **58.44** | **59.65**|
+| Roformer | 60.56 | 58.13 | 59.34 | 
 
 ## 模型说明
 
@@ -113,6 +119,17 @@ tnew数据集
 ### 6. Wobert
 #### 配置
 预训练模型下载: https://github.com/ZhuiyiTechnology/WoBERT
+#### 训练
+iflytek数据集  
+CUDA_VISIBLE_DEVICES=0 python run_cls_iflytek.py   # 直接做了验证
+
+tnew数据集  
+CUDA_VISIBLE_DEVICES=0 python run_cls_tnews.py   # 直接做了验证
+
+### 7. Roformer
+#### 配置
+预训练模型下载: https://pan.baidu.com/s/1fiss862YsGCwf2HvU_Jm-g (提取码：xy9x)
+
 #### 训练
 iflytek数据集  
 CUDA_VISIBLE_DEVICES=0 python run_cls_iflytek.py   # 直接做了验证
