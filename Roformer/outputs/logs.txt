@@ -1,0 +1,22 @@
+tnews
+Epoch: 0 | Loss:   1.512968 | Train acc:   0.496252 | Val acc:   0.562300 
+Epoch: 1 | Loss:   1.095670 | Train acc:   0.606672 | Val acc:   0.564200 
+Epoch: 2 | Loss:   0.869887 | Train acc:   0.678692 | Val acc:   0.573000 
+Epoch: 3 | Loss:   0.657992 | Train acc:   0.756072 | Val acc:   0.577700 
+Epoch: 4 | Loss:   0.476768 | Train acc:   0.825262 | Val acc:   0.576200 
+Epoch: 5 | Loss:   0.340408 | Train acc:   0.876068 | Val acc:   0.575900 
+Epoch: 6 | Loss:   0.254143 | Train acc:   0.909633 | Val acc:   0.576400 
+Epoch: 7 | Loss:   0.191344 | Train acc:   0.933733 | Val acc:   0.577200 
+Epoch: 8 | Loss:   0.147536 | Train acc:   0.949269 | Val acc:   0.581300 
+Epoch: 9 | Loss:   0.118181 | Train acc:   0.960251 | Val acc:   0.577300 
+iflytek
+Epoch: 0 | Loss:   3.244184 | Train acc:   0.315750 | Val acc:   0.499808 
+Epoch: 1 | Loss:   1.818200 | Train acc:   0.566472 | Val acc:   0.574836 
+Epoch: 2 | Loss:   1.446414 | Train acc:   0.630924 | Val acc:   0.590227 
+Epoch: 3 | Loss:   1.244061 | Train acc:   0.679964 | Val acc:   0.605618 
+Epoch: 4 | Loss:   1.093409 | Train acc:   0.713097 | Val acc:   0.592536 
+Epoch: 5 | Loss:   0.980255 | Train acc:   0.740872 | Val acc:   0.603694 
+Epoch: 6 | Loss:   0.871618 | Train acc:   0.769637 | Val acc:   0.602539 
+Epoch: 7 | Loss:   0.798420 | Train acc:   0.791972 | Val acc:   0.595998 
+Epoch: 8 | Loss:   0.734489 | Train acc:   0.806725 | Val acc:   0.591381 
+Epoch: 9 | Loss:   0.693746 | Train acc:   0.819748 | Val acc:   0.592536 
