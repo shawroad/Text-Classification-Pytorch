@@ -16,7 +16,7 @@ from config import set_args
 from model import Model
 from sklearn import metrics
 from torch.utils.data import DataLoader
-from transformers.models.bert import BertTokenizer
+from transformers.models.roformer import RoFormerTokenizer
 from data_helper_iflytek import load_data, CustomDataset, collate_fn
 from transformers import AdamW, get_linear_schedule_with_warmup
 
@@ -53,7 +53,7 @@ if __name__ == '__main__':
     set_seed()
     os.makedirs(args.output_dir, exist_ok=True)
 
-    tokenizer = BertTokenizer.from_pretrained(args.pretrained_model_path)
+    tokenizer = RoFormerTokenizer.from_pretrained(args.pretrained_model_path)
 
     # 加载数据集
     label2id = json.load(open('../data/iflytek_public/label2id.json', 'r', encoding='utf8'))
