@@ -1,0 +1,7 @@
+Epoch: 0 | Loss:   2.094506 | Train acc:   0.508527 | Val acc:   0.564800 
+Epoch: 1 | Loss:   1.610952 | Train acc:   0.604310 | Val acc:   0.569100 
+Epoch: 2 | Loss:   1.348547 | Train acc:   0.669996 | Val acc:   0.572600 
+Epoch: 3 | Loss:   1.113162 | Train acc:   0.732721 | Val acc:   0.573000 
+Epoch: 4 | Loss:   0.912110 | Train acc:   0.786694 | Val acc:   0.574400 
+Epoch: 5 | Loss:   0.762061 | Train acc:   0.823838 | Val acc:   0.573900 
+Epoch: 6 | Loss:   0.662404 | Train acc:   0.850806 | Val acc:   0.572600 
